@@ -18,6 +18,18 @@ func vals() (int, string){
 
 }
 
+func sum(nums ...int){
+fmt.Print(nums, " ")
+total := 0
+
+for _, num := range nums{
+	total += num
+}
+
+fmt.Println("sums",total)
+
+}
+
 func main(){
 
 
@@ -33,5 +45,9 @@ func main(){
 
 	_, c := vals()
 	fmt.Println(c)
+
+	sum(1, 2)
+	sum(1, 1,1)
+
 
 }
